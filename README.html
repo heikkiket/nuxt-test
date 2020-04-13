@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>README.html</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+</head>
+
+<body>
+
+<h1 id="manual">MANUAL</h1>
+<p>Clone the repository and test demo site for example with</p>
+<pre><code>cd nuxt-test/dist
+python -m SimpleHTTPServer</code></pre>
+<p>(Then navigate to http://localhost:8000)</p>
+<h2 id="editing-the-site">Editing the site</h2>
+<p>If you don't have node and npm installed, try this: ( sudo apt install nodejs npm )</p>
+<pre><code>npm install
+
+npm run dev</code></pre>
+<p>(dev site runs in localhost:3000)</p>
+<p>Now you can alter the code to your liking.</p>
+<p>Pages contains all pages. Assets has static files like images and css. Layouts contains the default layout and other optional layouts.</p>
+<p>All pages are Vue components. Their HTML must be inside template-element. In template element, only single root element is allowed. Wrap everything inside div for starters.</p>
+<ul>
+<li>See more: https://nuxtjs.org/guide</li>
+<li>More about single page Vue components: https://vuejs.org/v2/guide/single-file-components.html</li>
+</ul>
+<h2 id="compiling-the-site">Compiling the site:</h2>
+<pre><code>npm run generate</code></pre>
+<p>Now the compiled site is inside /dist.</p>
+
+</body>
+</html>
